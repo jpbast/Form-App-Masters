@@ -13,12 +13,22 @@ const LoadingSpinner = styled.div`
   padding: 1rem;
   opacity: 1;
 `
+const Img = styled.img`
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 9rem;
+  padding: 1rem;
+`
 
 export default function Home() {
   const [loading] = useContext(LoadingContext)
 
   return (
     <Container>
+      <a href="https://appmasters.io/pt/" target="_blank">
+        <Img src="./app-masters.png" alt="Logo App Masters" />
+      </a>
       <Form />
       <LoadingSpinner>
         <Loader loading={loading} />
