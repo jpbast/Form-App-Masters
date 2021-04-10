@@ -16,7 +16,7 @@ Durante as requisições às APIs, é mostrado na tela um símbolo de *loading* 
 ### CEP
 O campo de CEP possui um funcionamento um pouco diferente dos demais. Quando ele é preenchido, a aplicação realiza uma consulta na API [ViaCEP](https://viacep.com.br/) que nos informa se o CEP inserido é válido. Neste caso, toda vez que o CEP for válido, os campos relacionados com o endereço são automaticamente preenchidos e apresentados ao usuário. Por outro lado, sempre que o CEP for inválido, estes campos não aparecem e não são preenchidos. É importante salientar que apenas os campos `Número` e `Complemento` não são preenchidos automaticamente, sendo preciso que o usuário faça isso.
 
-## Tecnologias
+## Tecnologias Utilizadas
 - HTML
 - CSS
 - JavaScript
