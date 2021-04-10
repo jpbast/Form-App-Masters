@@ -1,0 +1,59 @@
+:root {
+  --lightGray: #F0F0F0;
+  --blue: #0AB6FF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background-color: var(--blue);
+}
+
+h1 {
+  color: hsl(257, 27%, 26%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 
+  Por conta do InputMask, não consegui utilizar o styled-components nos inputs.
+  Os campos com InputMask não estavam sendo estilizados, então optei por deixar
+  de maneira global o estilo dos inputs
+*/
+
+input, button {
+  font-family: inherit;
+  border-radius: 10px;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem;
+  font-family: inherit;
+  font-size: inherit;
+  color: black;
+}
+
+input:disabled {
+  background-color: #c8c8c8;
+  font-style: italic;
+}
+
+@media screen and (max-width: 500px) {
+  body, html {
+    font-size: 12px;
+  }
+}
