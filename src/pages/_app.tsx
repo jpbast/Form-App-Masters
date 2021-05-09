@@ -1,9 +1,12 @@
+import GlobalStyles from '../styles/global'
+
 import Head from 'next/head'
-import '../styles/globals.css'
+import { AppProps } from 'next/app'
+
 import { LoadingProvider } from '../contexts/LoadingContext'
 import { SubmitResponseProvider } from '../contexts/SubmitResponseContext'
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
@@ -11,6 +14,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <LoadingProvider>
         <SubmitResponseProvider>
+          <GlobalStyles />
           <Component {...pageProps} />
         </SubmitResponseProvider>
       </LoadingProvider>
