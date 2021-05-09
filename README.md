@@ -12,7 +12,7 @@ A aplicação possui um formulário com uma série de campos onde o usuário pre
 
 Os campos que estiverem inválidos são sinalizados na tela informando qual o erro. Caso esteja tudo certo, o formulário é enviado e uma mensagem é mostrada na tela.
 
-Caso ocorra um erro na tentativa de enviar o formulário, é mostrado uma mensagem na tela com um botão indicando para o usuário aguardar alguns instantes. Enquanto isso, o formulário fica bloqueado e não pode ser alterado e nem enviado. Quando o usuário quiser enviar novamente, basta apertar no botão `Tentar novamente` que o formulário volta a ser acessível. Além disso, o formulário também fica bloqueado enquanto aguarda uma requisição feita para qualquer API, mostrando um símbolo de *loading* na tela.
+Caso a API retorne algum erro (status diferente de 200 e 400) quando o formulário é enviado, é mostrado uma mensagem na tela com um botão indicando para o usuário aguardar alguns instantes. Enquanto isso, o formulário fica bloqueado e só pode ser manipulado e enviado novamente após o usuário apertar no botão `Tentar novamente`. Além disso, o formulário também fica bloqueado enquanto aguarda uma requisição feita para qualquer API, mostrando um símbolo de *loading* na tela.
 
 Sobre os estados utilizados, alguns foram criados através do `Context API`, facilitando a organização e a manipulação do código.
 
