@@ -1,5 +1,5 @@
 import Form from '../components/Form'
-import * as Styles from './styles'
+import * as Styles from '../styles/Home.styles'
 import Loader from '../components/Loader'
 
 export default function Home() {

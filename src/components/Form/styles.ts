@@ -13,6 +13,8 @@ export const Wrapper = styled.div<FormProps>`
     text-align: center;
     padding: 2.4rem 3rem;
     border-radius: 0.5rem;
+		box-shadow: 0 0 2rem gray;
+
 		opacity: ${loading ? '0.3' : null};
 
 		h1 {
